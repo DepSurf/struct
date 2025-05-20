@@ -1,0 +1,17 @@
+include: ["_*"]
+
+# https://github.com/jekyll/jekyll-commonmark
+markdown: CommonMarkGhPages
+commonmark:
+  options: ["unsafe", "smart"]
+  extensions: ["table", "autolink"]
+
+# https://github.com/benbalter/jekyll-relative-links
+relative_links: 
+  enable: false
+  exclude: ["*"]
+
+# https://github.com/benbalter/jekyll-readme-index
+readme_index:
+  enable: false
+

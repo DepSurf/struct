@@ -1,0 +1,291 @@
+# Struct: <code>line</code>
+
+## Status
+<b>Regular</b>
+<ul>
+<li>
+In <code>4.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.10</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.13</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.15</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.18</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.0</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.3</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.8</code>: Absent ⚠️
+</li>
+<li>
+<details>
+<summary>In <code>5.11</code>: ✅</summary>
+
+```c
+struct line {
+    struct gpio_desc *desc;
+    struct linereq *req;
+    unsigned int irq;
+    u64 eflags;
+    u64 timestamp_ns;
+    u32 req_seqno;
+    u32 line_seqno;
+    struct delayed_work work;
+    unsigned int sw_debounced;
+    unsigned int level;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.13</code>: ✅</summary>
+
+```c
+struct line {
+    struct gpio_desc *desc;
+    struct linereq *req;
+    unsigned int irq;
+    u64 eflags;
+    u64 timestamp_ns;
+    u32 req_seqno;
+    u32 line_seqno;
+    struct delayed_work work;
+    unsigned int sw_debounced;
+    unsigned int level;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.15</code>: ✅</summary>
+
+```c
+struct line {
+    struct gpio_desc *desc;
+    struct linereq *req;
+    unsigned int irq;
+    u64 eflags;
+    u64 timestamp_ns;
+    u32 req_seqno;
+    u32 line_seqno;
+    struct delayed_work work;
+    unsigned int sw_debounced;
+    unsigned int level;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.19</code>: ✅</summary>
+
+```c
+struct line {
+    struct gpio_desc *desc;
+    struct linereq *req;
+    unsigned int irq;
+    u64 eflags;
+    u64 timestamp_ns;
+    u32 req_seqno;
+    u32 line_seqno;
+    struct delayed_work work;
+    unsigned int sw_debounced;
+    unsigned int level;
+    struct hte_ts_desc hdesc;
+    int raw_level;
+    u32 total_discard_seq;
+    u32 last_seqno;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.2</code>: ✅</summary>
+
+```c
+struct line {
+    struct gpio_desc *desc;
+    struct linereq *req;
+    unsigned int irq;
+    u64 edflags;
+    u64 timestamp_ns;
+    u32 req_seqno;
+    u32 line_seqno;
+    struct delayed_work work;
+    unsigned int sw_debounced;
+    unsigned int level;
+    struct hte_ts_desc hdesc;
+    int raw_level;
+    u32 total_discard_seq;
+    u32 last_seqno;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.5</code>: ✅</summary>
+
+```c
+struct line {
+    struct gpio_desc *desc;
+    struct linereq *req;
+    unsigned int irq;
+    u64 edflags;
+    u64 timestamp_ns;
+    u32 req_seqno;
+    u32 line_seqno;
+    struct delayed_work work;
+    unsigned int sw_debounced;
+    unsigned int level;
+    struct hte_ts_desc hdesc;
+    int raw_level;
+    u32 total_discard_seq;
+    u32 last_seqno;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.8</code>: ✅</summary>
+
+```c
+struct line {
+    struct rb_node node;
+    struct gpio_desc *desc;
+    struct linereq *req;
+    unsigned int irq;
+    u64 edflags;
+    u64 timestamp_ns;
+    u32 req_seqno;
+    u32 line_seqno;
+    struct delayed_work work;
+    unsigned int debounce_period_us;
+    unsigned int sw_debounced;
+    unsigned int level;
+    struct hte_ts_desc hdesc;
+    int raw_level;
+    u32 total_discard_seq;
+    u32 last_seqno;
+};
+```
+</details>
+</li>
+</ul>
+<b>Arch</b>
+<ul>
+<li>
+In <code>arm64</code>: Absent ⚠️
+</li>
+<li>
+In <code>armhf</code>: Absent ⚠️
+</li>
+<li>
+In <code>ppc64el</code>: Absent ⚠️
+</li>
+<li>
+In <code>riscv64</code>: Absent ⚠️
+</li>
+</ul>
+<b>Flavor</b>
+<ul>
+<li>
+In <code>aws</code>: Absent ⚠️
+</li>
+<li>
+In <code>azure</code>: Absent ⚠️
+</li>
+<li>
+In <code>gcp</code>: Absent ⚠️
+</li>
+<li>
+In <code>lowlatency</code>: Absent ⚠️
+</li>
+</ul>
+
+## Differences
+<b>Regular</b>
+<ul>
+<li>
+No changes between <code>5.11</code> and <code>5.13</code> ✅
+</li>
+<li>
+No changes between <code>5.13</code> and <code>5.15</code> ✅
+</li>
+<li>
+<details>
+<summary>Changed between <code>5.15</code> and <code>5.19</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field added. </b>
+<code>struct hte_ts_desc hdesc</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>int raw_level</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>u32 total_discard_seq</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>u32 last_seqno</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Changed between <code>5.19</code> and <code>6.2</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field added. </b>
+<code>u64 edflags</code>
+</li>
+<li>
+<b>Field removed. </b>
+<code>u64 eflags</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+No changes between <code>6.2</code> and <code>6.5</code> ✅
+</li>
+<li>
+<details>
+<summary>Changed between <code>6.5</code> and <code>6.8</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field added. </b>
+<code>struct rb_node node</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>unsigned int debounce_period_us</code>
+</li>
+</ul>
+</details>
+</li>
+</ul>

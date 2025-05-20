@@ -1,0 +1,228 @@
+# Struct: <code>mpc8xxx_spi</code>
+
+## Status
+<b>Regular</b>
+<ul>
+<li>
+In <code>4.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.10</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.13</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.15</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.18</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.0</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.3</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.11</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.13</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.15</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.19</code>: Absent ⚠️
+</li>
+<li>
+In <code>6.2</code>: Absent ⚠️
+</li>
+<li>
+In <code>6.5</code>: Absent ⚠️
+</li>
+<li>
+In <code>6.8</code>: Absent ⚠️
+</li>
+</ul>
+<b>Arch</b>
+<ul>
+<li>
+<details>
+<summary>In <code>arm64</code>: ✅</summary>
+
+```c
+struct mpc8xxx_spi {
+    struct device *dev;
+    void *reg_base;
+    const void *tx;
+    void *rx;
+    int subblock;
+    struct spi_pram *pram;
+    struct spi_transfer *xfer_in_progress;
+    dma_addr_t tx_dma;
+    dma_addr_t rx_dma;
+    bool map_tx_dma;
+    bool map_rx_dma;
+    dma_addr_t dma_dummy_tx;
+    dma_addr_t dma_dummy_rx;
+    void (*get_rx)(u32, struct mpc8xxx_spi *);
+    u32 (*get_tx)(struct mpc8xxx_spi *);
+    unsigned int count;
+    unsigned int irq;
+    unsigned int nsecs;
+    u32 spibrg;
+    u32 rx_shift;
+    u32 tx_shift;
+    unsigned int flags;
+    int type;
+    int native_chipselects;
+    u8 max_bits_per_word;
+    void (*set_shifts)(u32 *, u32 *, int, int);
+    struct completion done;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>armhf</code>: ✅</summary>
+
+```c
+struct mpc8xxx_spi {
+    struct device *dev;
+    void *reg_base;
+    const void *tx;
+    void *rx;
+    int subblock;
+    struct spi_pram *pram;
+    struct spi_transfer *xfer_in_progress;
+    dma_addr_t tx_dma;
+    dma_addr_t rx_dma;
+    bool map_tx_dma;
+    bool map_rx_dma;
+    dma_addr_t dma_dummy_tx;
+    dma_addr_t dma_dummy_rx;
+    void (*get_rx)(u32, struct mpc8xxx_spi *);
+    u32 (*get_tx)(struct mpc8xxx_spi *);
+    unsigned int count;
+    unsigned int irq;
+    unsigned int nsecs;
+    u32 spibrg;
+    u32 rx_shift;
+    u32 tx_shift;
+    unsigned int flags;
+    int type;
+    int native_chipselects;
+    u8 max_bits_per_word;
+    void (*set_shifts)(u32 *, u32 *, int, int);
+    struct completion done;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>ppc64el</code>: ✅</summary>
+
+```c
+struct mpc8xxx_spi {
+    struct device *dev;
+    void *reg_base;
+    const void *tx;
+    void *rx;
+    int subblock;
+    struct spi_pram *pram;
+    struct spi_transfer *xfer_in_progress;
+    dma_addr_t tx_dma;
+    dma_addr_t rx_dma;
+    bool map_tx_dma;
+    bool map_rx_dma;
+    dma_addr_t dma_dummy_tx;
+    dma_addr_t dma_dummy_rx;
+    void (*get_rx)(u32, struct mpc8xxx_spi *);
+    u32 (*get_tx)(struct mpc8xxx_spi *);
+    unsigned int count;
+    unsigned int irq;
+    unsigned int nsecs;
+    u32 spibrg;
+    u32 rx_shift;
+    u32 tx_shift;
+    unsigned int flags;
+    int type;
+    int native_chipselects;
+    u8 max_bits_per_word;
+    void (*set_shifts)(u32 *, u32 *, int, int);
+    struct completion done;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>riscv64</code>: ✅</summary>
+
+```c
+struct mpc8xxx_spi {
+    struct device *dev;
+    void *reg_base;
+    const void *tx;
+    void *rx;
+    int subblock;
+    struct spi_pram *pram;
+    struct spi_transfer *xfer_in_progress;
+    dma_addr_t tx_dma;
+    dma_addr_t rx_dma;
+    bool map_tx_dma;
+    bool map_rx_dma;
+    dma_addr_t dma_dummy_tx;
+    dma_addr_t dma_dummy_rx;
+    void (*get_rx)(u32, struct mpc8xxx_spi *);
+    u32 (*get_tx)(struct mpc8xxx_spi *);
+    unsigned int count;
+    unsigned int irq;
+    unsigned int nsecs;
+    u32 spibrg;
+    u32 rx_shift;
+    u32 tx_shift;
+    unsigned int flags;
+    int type;
+    int native_chipselects;
+    u8 max_bits_per_word;
+    void (*set_shifts)(u32 *, u32 *, int, int);
+    struct completion done;
+};
+```
+</details>
+</li>
+</ul>
+<b>Flavor</b>
+<ul>
+<li>
+In <code>aws</code>: Absent ⚠️
+</li>
+<li>
+In <code>azure</code>: Absent ⚠️
+</li>
+<li>
+In <code>gcp</code>: Absent ⚠️
+</li>
+<li>
+In <code>lowlatency</code>: Absent ⚠️
+</li>
+</ul>
+
+## Differences
+<b>Arch</b>
+<ul>
+</ul>

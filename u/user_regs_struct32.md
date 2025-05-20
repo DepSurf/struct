@@ -1,0 +1,287 @@
+# Struct: <code>user_regs_struct32</code>
+
+## Status
+<b>Regular</b>
+<ul>
+<li>
+In <code>4.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.10</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.13</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.15</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.18</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.0</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.3</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.11</code>: Absent ⚠️
+</li>
+<li>
+<details>
+<summary>In <code>5.13</code>: ✅</summary>
+
+```c
+struct user_regs_struct32 {
+    __u32 ebx;
+    __u32 ecx;
+    __u32 edx;
+    __u32 esi;
+    __u32 edi;
+    __u32 ebp;
+    __u32 eax;
+    short unsigned int ds;
+    short unsigned int __ds;
+    short unsigned int es;
+    short unsigned int __es;
+    short unsigned int fs;
+    short unsigned int __fs;
+    short unsigned int gs;
+    short unsigned int __gs;
+    __u32 orig_eax;
+    __u32 eip;
+    short unsigned int cs;
+    short unsigned int __cs;
+    __u32 eflags;
+    __u32 esp;
+    short unsigned int ss;
+    short unsigned int __ss;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.15</code>: ✅</summary>
+
+```c
+struct user_regs_struct32 {
+    __u32 ebx;
+    __u32 ecx;
+    __u32 edx;
+    __u32 esi;
+    __u32 edi;
+    __u32 ebp;
+    __u32 eax;
+    short unsigned int ds;
+    short unsigned int __ds;
+    short unsigned int es;
+    short unsigned int __es;
+    short unsigned int fs;
+    short unsigned int __fs;
+    short unsigned int gs;
+    short unsigned int __gs;
+    __u32 orig_eax;
+    __u32 eip;
+    short unsigned int cs;
+    short unsigned int __cs;
+    __u32 eflags;
+    __u32 esp;
+    short unsigned int ss;
+    short unsigned int __ss;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.19</code>: ✅</summary>
+
+```c
+struct user_regs_struct32 {
+    __u32 ebx;
+    __u32 ecx;
+    __u32 edx;
+    __u32 esi;
+    __u32 edi;
+    __u32 ebp;
+    __u32 eax;
+    short unsigned int ds;
+    short unsigned int __ds;
+    short unsigned int es;
+    short unsigned int __es;
+    short unsigned int fs;
+    short unsigned int __fs;
+    short unsigned int gs;
+    short unsigned int __gs;
+    __u32 orig_eax;
+    __u32 eip;
+    short unsigned int cs;
+    short unsigned int __cs;
+    __u32 eflags;
+    __u32 esp;
+    short unsigned int ss;
+    short unsigned int __ss;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.2</code>: ✅</summary>
+
+```c
+struct user_regs_struct32 {
+    __u32 ebx;
+    __u32 ecx;
+    __u32 edx;
+    __u32 esi;
+    __u32 edi;
+    __u32 ebp;
+    __u32 eax;
+    short unsigned int ds;
+    short unsigned int __ds;
+    short unsigned int es;
+    short unsigned int __es;
+    short unsigned int fs;
+    short unsigned int __fs;
+    short unsigned int gs;
+    short unsigned int __gs;
+    __u32 orig_eax;
+    __u32 eip;
+    short unsigned int cs;
+    short unsigned int __cs;
+    __u32 eflags;
+    __u32 esp;
+    short unsigned int ss;
+    short unsigned int __ss;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.5</code>: ✅</summary>
+
+```c
+struct user_regs_struct32 {
+    __u32 ebx;
+    __u32 ecx;
+    __u32 edx;
+    __u32 esi;
+    __u32 edi;
+    __u32 ebp;
+    __u32 eax;
+    short unsigned int ds;
+    short unsigned int __ds;
+    short unsigned int es;
+    short unsigned int __es;
+    short unsigned int fs;
+    short unsigned int __fs;
+    short unsigned int gs;
+    short unsigned int __gs;
+    __u32 orig_eax;
+    __u32 eip;
+    short unsigned int cs;
+    short unsigned int __cs;
+    __u32 eflags;
+    __u32 esp;
+    short unsigned int ss;
+    short unsigned int __ss;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.8</code>: ✅</summary>
+
+```c
+struct user_regs_struct32 {
+    __u32 ebx;
+    __u32 ecx;
+    __u32 edx;
+    __u32 esi;
+    __u32 edi;
+    __u32 ebp;
+    __u32 eax;
+    short unsigned int ds;
+    short unsigned int __ds;
+    short unsigned int es;
+    short unsigned int __es;
+    short unsigned int fs;
+    short unsigned int __fs;
+    short unsigned int gs;
+    short unsigned int __gs;
+    __u32 orig_eax;
+    __u32 eip;
+    short unsigned int cs;
+    short unsigned int __cs;
+    __u32 eflags;
+    __u32 esp;
+    short unsigned int ss;
+    short unsigned int __ss;
+};
+```
+</details>
+</li>
+</ul>
+<b>Arch</b>
+<ul>
+<li>
+In <code>arm64</code>: Absent ⚠️
+</li>
+<li>
+In <code>armhf</code>: Absent ⚠️
+</li>
+<li>
+In <code>ppc64el</code>: Absent ⚠️
+</li>
+<li>
+In <code>riscv64</code>: Absent ⚠️
+</li>
+</ul>
+<b>Flavor</b>
+<ul>
+<li>
+In <code>aws</code>: Absent ⚠️
+</li>
+<li>
+In <code>azure</code>: Absent ⚠️
+</li>
+<li>
+In <code>gcp</code>: Absent ⚠️
+</li>
+<li>
+In <code>lowlatency</code>: Absent ⚠️
+</li>
+</ul>
+
+## Differences
+<b>Regular</b>
+<ul>
+<li>
+No changes between <code>5.13</code> and <code>5.15</code> ✅
+</li>
+<li>
+No changes between <code>5.15</code> and <code>5.19</code> ✅
+</li>
+<li>
+No changes between <code>5.19</code> and <code>6.2</code> ✅
+</li>
+<li>
+No changes between <code>6.2</code> and <code>6.5</code> ✅
+</li>
+<li>
+No changes between <code>6.5</code> and <code>6.8</code> ✅
+</li>
+</ul>

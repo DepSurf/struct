@@ -1,0 +1,176 @@
+# Struct: <code>compat_floppy_drive_params</code>
+
+## Status
+<b>Regular</b>
+<ul>
+<li>
+<details>
+<summary>In <code>4.4</code>: ✅</summary>
+
+```c
+struct compat_floppy_drive_params {
+    char cmos;
+    compat_ulong_t max_dtr;
+    compat_ulong_t hlt;
+    compat_ulong_t hut;
+    compat_ulong_t srt;
+    compat_ulong_t spinup;
+    compat_ulong_t spindown;
+    unsigned char spindown_offset;
+    unsigned char select_delay;
+    unsigned char rps;
+    unsigned char tracks;
+    compat_ulong_t timeout;
+    unsigned char interleave_sect;
+    struct floppy_max_errors max_errors;
+    char flags;
+    char read_track;
+    short int autodetect[8];
+    compat_int_t checkfreq;
+    compat_int_t native_format;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.8</code>: ✅</summary>
+
+```c
+struct compat_floppy_drive_params {
+    char cmos;
+    compat_ulong_t max_dtr;
+    compat_ulong_t hlt;
+    compat_ulong_t hut;
+    compat_ulong_t srt;
+    compat_ulong_t spinup;
+    compat_ulong_t spindown;
+    unsigned char spindown_offset;
+    unsigned char select_delay;
+    unsigned char rps;
+    unsigned char tracks;
+    compat_ulong_t timeout;
+    unsigned char interleave_sect;
+    struct floppy_max_errors max_errors;
+    char flags;
+    char read_track;
+    short int autodetect[8];
+    compat_int_t checkfreq;
+    compat_int_t native_format;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.10</code>: ✅</summary>
+
+```c
+struct compat_floppy_drive_params {
+    char cmos;
+    compat_ulong_t max_dtr;
+    compat_ulong_t hlt;
+    compat_ulong_t hut;
+    compat_ulong_t srt;
+    compat_ulong_t spinup;
+    compat_ulong_t spindown;
+    unsigned char spindown_offset;
+    unsigned char select_delay;
+    unsigned char rps;
+    unsigned char tracks;
+    compat_ulong_t timeout;
+    unsigned char interleave_sect;
+    struct floppy_max_errors max_errors;
+    char flags;
+    char read_track;
+    short int autodetect[8];
+    compat_int_t checkfreq;
+    compat_int_t native_format;
+};
+```
+</details>
+</li>
+<li>
+In <code>4.13</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.15</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.18</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.0</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.3</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.11</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.13</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.15</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.19</code>: Absent ⚠️
+</li>
+<li>
+In <code>6.2</code>: Absent ⚠️
+</li>
+<li>
+In <code>6.5</code>: Absent ⚠️
+</li>
+<li>
+In <code>6.8</code>: Absent ⚠️
+</li>
+</ul>
+<b>Arch</b>
+<ul>
+<li>
+In <code>arm64</code>: Absent ⚠️
+</li>
+<li>
+In <code>armhf</code>: Absent ⚠️
+</li>
+<li>
+In <code>ppc64el</code>: Absent ⚠️
+</li>
+<li>
+In <code>riscv64</code>: Absent ⚠️
+</li>
+</ul>
+<b>Flavor</b>
+<ul>
+<li>
+In <code>aws</code>: Absent ⚠️
+</li>
+<li>
+In <code>azure</code>: Absent ⚠️
+</li>
+<li>
+In <code>gcp</code>: Absent ⚠️
+</li>
+<li>
+In <code>lowlatency</code>: Absent ⚠️
+</li>
+</ul>
+
+## Differences
+<b>Regular</b>
+<ul>
+<li>
+No changes between <code>4.4</code> and <code>4.8</code> ✅
+</li>
+<li>
+No changes between <code>4.8</code> and <code>4.10</code> ✅
+</li>
+</ul>

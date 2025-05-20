@@ -1,0 +1,254 @@
+# Struct: <code>atm_vcc</code>
+
+## Status
+<b>Regular</b>
+<ul>
+<li>
+In <code>4.4</code>: Absent ⚠️
+</li>
+<li>
+<details>
+<summary>In <code>4.8</code>: ✅</summary>
+
+```c
+struct atm_vcc {
+    struct sock sk;
+    long unsigned int flags;
+    short int vpi;
+    int vci;
+    long unsigned int aal_options;
+    long unsigned int atm_options;
+    struct atm_dev *dev;
+    struct atm_qos qos;
+    struct atm_sap sap;
+    void (*release_cb)(struct atm_vcc *);
+    void (*push)(struct atm_vcc *, struct sk_buff *);
+    void (*pop)(struct atm_vcc *, struct sk_buff *);
+    int (*push_oam)(struct atm_vcc *, void *);
+    int (*send)(struct atm_vcc *, struct sk_buff *);
+    void *dev_data;
+    void *proto_data;
+    struct k_atm_aal_stats *stats;
+    struct module *owner;
+    short int itf;
+    struct sockaddr_atmsvc local;
+    struct sockaddr_atmsvc remote;
+    struct atm_vcc *session;
+    void *user_back;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.10</code>: ✅</summary>
+
+```c
+struct atm_vcc {
+    struct sock sk;
+    long unsigned int flags;
+    short int vpi;
+    int vci;
+    long unsigned int aal_options;
+    long unsigned int atm_options;
+    struct atm_dev *dev;
+    struct atm_qos qos;
+    struct atm_sap sap;
+    void (*release_cb)(struct atm_vcc *);
+    void (*push)(struct atm_vcc *, struct sk_buff *);
+    void (*pop)(struct atm_vcc *, struct sk_buff *);
+    int (*push_oam)(struct atm_vcc *, void *);
+    int (*send)(struct atm_vcc *, struct sk_buff *);
+    void *dev_data;
+    void *proto_data;
+    struct k_atm_aal_stats *stats;
+    struct module *owner;
+    short int itf;
+    struct sockaddr_atmsvc local;
+    struct sockaddr_atmsvc remote;
+    struct atm_vcc *session;
+    void *user_back;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.13</code>: ✅</summary>
+
+```c
+struct atm_vcc {
+    struct sock sk;
+    long unsigned int flags;
+    short int vpi;
+    int vci;
+    long unsigned int aal_options;
+    long unsigned int atm_options;
+    struct atm_dev *dev;
+    struct atm_qos qos;
+    struct atm_sap sap;
+    void (*release_cb)(struct atm_vcc *);
+    void (*push)(struct atm_vcc *, struct sk_buff *);
+    void (*pop)(struct atm_vcc *, struct sk_buff *);
+    int (*push_oam)(struct atm_vcc *, void *);
+    int (*send)(struct atm_vcc *, struct sk_buff *);
+    void *dev_data;
+    void *proto_data;
+    struct k_atm_aal_stats *stats;
+    struct module *owner;
+    short int itf;
+    struct sockaddr_atmsvc local;
+    struct sockaddr_atmsvc remote;
+    struct atm_vcc *session;
+    void *user_back;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.15</code>: ✅</summary>
+
+```c
+struct atm_vcc {
+    struct sock sk;
+    long unsigned int flags;
+    short int vpi;
+    int vci;
+    long unsigned int aal_options;
+    long unsigned int atm_options;
+    struct atm_dev *dev;
+    struct atm_qos qos;
+    struct atm_sap sap;
+    void (*release_cb)(struct atm_vcc *);
+    void (*push)(struct atm_vcc *, struct sk_buff *);
+    void (*pop)(struct atm_vcc *, struct sk_buff *);
+    int (*push_oam)(struct atm_vcc *, void *);
+    int (*send)(struct atm_vcc *, struct sk_buff *);
+    void *dev_data;
+    void *proto_data;
+    struct k_atm_aal_stats *stats;
+    struct module *owner;
+    short int itf;
+    struct sockaddr_atmsvc local;
+    struct sockaddr_atmsvc remote;
+    struct atm_vcc *session;
+    void *user_back;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.18</code>: ✅</summary>
+
+```c
+struct atm_vcc {
+    struct sock sk;
+    long unsigned int flags;
+    short int vpi;
+    int vci;
+    long unsigned int aal_options;
+    long unsigned int atm_options;
+    struct atm_dev *dev;
+    struct atm_qos qos;
+    struct atm_sap sap;
+    void (*release_cb)(struct atm_vcc *);
+    void (*push)(struct atm_vcc *, struct sk_buff *);
+    void (*pop)(struct atm_vcc *, struct sk_buff *);
+    int (*push_oam)(struct atm_vcc *, void *);
+    int (*send)(struct atm_vcc *, struct sk_buff *);
+    void *dev_data;
+    void *proto_data;
+    struct k_atm_aal_stats *stats;
+    struct module *owner;
+    short int itf;
+    struct sockaddr_atmsvc local;
+    struct sockaddr_atmsvc remote;
+    struct atm_vcc *session;
+    void *user_back;
+};
+```
+</details>
+</li>
+<li>
+In <code>5.0</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.3</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.11</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.13</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.15</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.19</code>: Absent ⚠️
+</li>
+<li>
+In <code>6.2</code>: Absent ⚠️
+</li>
+<li>
+In <code>6.5</code>: Absent ⚠️
+</li>
+<li>
+In <code>6.8</code>: Absent ⚠️
+</li>
+</ul>
+<b>Arch</b>
+<ul>
+<li>
+In <code>arm64</code>: Absent ⚠️
+</li>
+<li>
+In <code>armhf</code>: Absent ⚠️
+</li>
+<li>
+In <code>ppc64el</code>: Absent ⚠️
+</li>
+<li>
+In <code>riscv64</code>: Absent ⚠️
+</li>
+</ul>
+<b>Flavor</b>
+<ul>
+<li>
+In <code>aws</code>: Absent ⚠️
+</li>
+<li>
+In <code>azure</code>: Absent ⚠️
+</li>
+<li>
+In <code>gcp</code>: Absent ⚠️
+</li>
+<li>
+In <code>lowlatency</code>: Absent ⚠️
+</li>
+</ul>
+
+## Differences
+<b>Regular</b>
+<ul>
+<li>
+No changes between <code>4.8</code> and <code>4.10</code> ✅
+</li>
+<li>
+No changes between <code>4.10</code> and <code>4.13</code> ✅
+</li>
+<li>
+No changes between <code>4.13</code> and <code>4.15</code> ✅
+</li>
+<li>
+No changes between <code>4.15</code> and <code>4.18</code> ✅
+</li>
+</ul>

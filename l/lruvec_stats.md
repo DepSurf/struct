@@ -1,0 +1,190 @@
+# Struct: <code>lruvec_stats</code>
+
+## Status
+<b>Regular</b>
+<ul>
+<li>
+In <code>4.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.10</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.13</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.15</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.18</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.0</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.3</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.11</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.13</code>: Absent ⚠️
+</li>
+<li>
+<details>
+<summary>In <code>5.15</code>: ✅</summary>
+
+```c
+struct lruvec_stats {
+    long int state[39];
+    long int state_pending[39];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.19</code>: ✅</summary>
+
+```c
+struct lruvec_stats {
+    long int state[41];
+    long int state_pending[41];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.2</code>: ✅</summary>
+
+```c
+struct lruvec_stats {
+    long int state[43];
+    long int state_pending[43];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.5</code>: ✅</summary>
+
+```c
+struct lruvec_stats {
+    long int state[43];
+    long int state_pending[43];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.8</code>: ✅</summary>
+
+```c
+struct lruvec_stats {
+    long int state[46];
+    long int state_local[46];
+    long int state_pending[46];
+};
+```
+</details>
+</li>
+</ul>
+<b>Arch</b>
+<ul>
+<li>
+In <code>arm64</code>: Absent ⚠️
+</li>
+<li>
+In <code>armhf</code>: Absent ⚠️
+</li>
+<li>
+In <code>ppc64el</code>: Absent ⚠️
+</li>
+<li>
+In <code>riscv64</code>: Absent ⚠️
+</li>
+</ul>
+<b>Flavor</b>
+<ul>
+<li>
+In <code>aws</code>: Absent ⚠️
+</li>
+<li>
+In <code>azure</code>: Absent ⚠️
+</li>
+<li>
+In <code>gcp</code>: Absent ⚠️
+</li>
+<li>
+In <code>lowlatency</code>: Absent ⚠️
+</li>
+</ul>
+
+## Differences
+<b>Regular</b>
+<ul>
+<li>
+<details>
+<summary>Changed between <code>5.15</code> and <code>5.19</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field type changed. </b>
+<code>long int state[39]</code> ➡️ <code>long int state[41]</code>
+</li>
+<li>
+<b>Field type changed. </b>
+<code>long int state_pending[39]</code> ➡️ <code>long int state_pending[41]</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Changed between <code>5.19</code> and <code>6.2</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field type changed. </b>
+<code>long int state[41]</code> ➡️ <code>long int state[43]</code>
+</li>
+<li>
+<b>Field type changed. </b>
+<code>long int state_pending[41]</code> ➡️ <code>long int state_pending[43]</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+No changes between <code>6.2</code> and <code>6.5</code> ✅
+</li>
+<li>
+<details>
+<summary>Changed between <code>6.5</code> and <code>6.8</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field added. </b>
+<code>long int state_local[46]</code>
+</li>
+<li>
+<b>Field type changed. </b>
+<code>long int state[43]</code> ➡️ <code>long int state[46]</code>
+</li>
+<li>
+<b>Field type changed. </b>
+<code>long int state_pending[43]</code> ➡️ <code>long int state_pending[46]</code>
+</li>
+</ul>
+</details>
+</li>
+</ul>

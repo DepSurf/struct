@@ -1,0 +1,345 @@
+# Struct: <code>compat_sg_io_hdr</code>
+
+## Status
+<b>Regular</b>
+<ul>
+<li>
+In <code>4.4</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.8</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.10</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.13</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.15</code>: Absent ⚠️
+</li>
+<li>
+In <code>4.18</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.0</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.3</code>: Absent ⚠️
+</li>
+<li>
+In <code>5.4</code>: Absent ⚠️
+</li>
+<li>
+<details>
+<summary>In <code>5.8</code>: ✅</summary>
+
+```c
+struct compat_sg_io_hdr {
+    compat_int_t interface_id;
+    compat_int_t dxfer_direction;
+    unsigned char cmd_len;
+    unsigned char mx_sb_len;
+    short unsigned int iovec_count;
+    compat_uint_t dxfer_len;
+    compat_uint_t dxferp;
+    compat_uptr_t cmdp;
+    compat_uptr_t sbp;
+    compat_uint_t timeout;
+    compat_uint_t flags;
+    compat_int_t pack_id;
+    compat_uptr_t usr_ptr;
+    unsigned char status;
+    unsigned char masked_status;
+    unsigned char msg_status;
+    unsigned char sb_len_wr;
+    short unsigned int host_status;
+    short unsigned int driver_status;
+    compat_int_t resid;
+    compat_uint_t duration;
+    compat_uint_t info;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.11</code>: ✅</summary>
+
+```c
+struct compat_sg_io_hdr {
+    compat_int_t interface_id;
+    compat_int_t dxfer_direction;
+    unsigned char cmd_len;
+    unsigned char mx_sb_len;
+    short unsigned int iovec_count;
+    compat_uint_t dxfer_len;
+    compat_uint_t dxferp;
+    compat_uptr_t cmdp;
+    compat_uptr_t sbp;
+    compat_uint_t timeout;
+    compat_uint_t flags;
+    compat_int_t pack_id;
+    compat_uptr_t usr_ptr;
+    unsigned char status;
+    unsigned char masked_status;
+    unsigned char msg_status;
+    unsigned char sb_len_wr;
+    short unsigned int host_status;
+    short unsigned int driver_status;
+    compat_int_t resid;
+    compat_uint_t duration;
+    compat_uint_t info;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.13</code>: ✅</summary>
+
+```c
+struct compat_sg_io_hdr {
+    compat_int_t interface_id;
+    compat_int_t dxfer_direction;
+    unsigned char cmd_len;
+    unsigned char mx_sb_len;
+    short unsigned int iovec_count;
+    compat_uint_t dxfer_len;
+    compat_uint_t dxferp;
+    compat_uptr_t cmdp;
+    compat_uptr_t sbp;
+    compat_uint_t timeout;
+    compat_uint_t flags;
+    compat_int_t pack_id;
+    compat_uptr_t usr_ptr;
+    unsigned char status;
+    unsigned char masked_status;
+    unsigned char msg_status;
+    unsigned char sb_len_wr;
+    short unsigned int host_status;
+    short unsigned int driver_status;
+    compat_int_t resid;
+    compat_uint_t duration;
+    compat_uint_t info;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.15</code>: ✅</summary>
+
+```c
+struct compat_sg_io_hdr {
+    compat_int_t interface_id;
+    compat_int_t dxfer_direction;
+    unsigned char cmd_len;
+    unsigned char mx_sb_len;
+    short unsigned int iovec_count;
+    compat_uint_t dxfer_len;
+    compat_uint_t dxferp;
+    compat_uptr_t cmdp;
+    compat_uptr_t sbp;
+    compat_uint_t timeout;
+    compat_uint_t flags;
+    compat_int_t pack_id;
+    compat_uptr_t usr_ptr;
+    unsigned char status;
+    unsigned char masked_status;
+    unsigned char msg_status;
+    unsigned char sb_len_wr;
+    short unsigned int host_status;
+    short unsigned int driver_status;
+    compat_int_t resid;
+    compat_uint_t duration;
+    compat_uint_t info;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.19</code>: ✅</summary>
+
+```c
+struct compat_sg_io_hdr {
+    compat_int_t interface_id;
+    compat_int_t dxfer_direction;
+    unsigned char cmd_len;
+    unsigned char mx_sb_len;
+    short unsigned int iovec_count;
+    compat_uint_t dxfer_len;
+    compat_uint_t dxferp;
+    compat_uptr_t cmdp;
+    compat_uptr_t sbp;
+    compat_uint_t timeout;
+    compat_uint_t flags;
+    compat_int_t pack_id;
+    compat_uptr_t usr_ptr;
+    unsigned char status;
+    unsigned char masked_status;
+    unsigned char msg_status;
+    unsigned char sb_len_wr;
+    short unsigned int host_status;
+    short unsigned int driver_status;
+    compat_int_t resid;
+    compat_uint_t duration;
+    compat_uint_t info;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.2</code>: ✅</summary>
+
+```c
+struct compat_sg_io_hdr {
+    compat_int_t interface_id;
+    compat_int_t dxfer_direction;
+    unsigned char cmd_len;
+    unsigned char mx_sb_len;
+    short unsigned int iovec_count;
+    compat_uint_t dxfer_len;
+    compat_uint_t dxferp;
+    compat_uptr_t cmdp;
+    compat_uptr_t sbp;
+    compat_uint_t timeout;
+    compat_uint_t flags;
+    compat_int_t pack_id;
+    compat_uptr_t usr_ptr;
+    unsigned char status;
+    unsigned char masked_status;
+    unsigned char msg_status;
+    unsigned char sb_len_wr;
+    short unsigned int host_status;
+    short unsigned int driver_status;
+    compat_int_t resid;
+    compat_uint_t duration;
+    compat_uint_t info;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.5</code>: ✅</summary>
+
+```c
+struct compat_sg_io_hdr {
+    compat_int_t interface_id;
+    compat_int_t dxfer_direction;
+    unsigned char cmd_len;
+    unsigned char mx_sb_len;
+    short unsigned int iovec_count;
+    compat_uint_t dxfer_len;
+    compat_uint_t dxferp;
+    compat_uptr_t cmdp;
+    compat_uptr_t sbp;
+    compat_uint_t timeout;
+    compat_uint_t flags;
+    compat_int_t pack_id;
+    compat_uptr_t usr_ptr;
+    unsigned char status;
+    unsigned char masked_status;
+    unsigned char msg_status;
+    unsigned char sb_len_wr;
+    short unsigned int host_status;
+    short unsigned int driver_status;
+    compat_int_t resid;
+    compat_uint_t duration;
+    compat_uint_t info;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.8</code>: ✅</summary>
+
+```c
+struct compat_sg_io_hdr {
+    compat_int_t interface_id;
+    compat_int_t dxfer_direction;
+    unsigned char cmd_len;
+    unsigned char mx_sb_len;
+    short unsigned int iovec_count;
+    compat_uint_t dxfer_len;
+    compat_uint_t dxferp;
+    compat_uptr_t cmdp;
+    compat_uptr_t sbp;
+    compat_uint_t timeout;
+    compat_uint_t flags;
+    compat_int_t pack_id;
+    compat_uptr_t usr_ptr;
+    unsigned char status;
+    unsigned char masked_status;
+    unsigned char msg_status;
+    unsigned char sb_len_wr;
+    short unsigned int host_status;
+    short unsigned int driver_status;
+    compat_int_t resid;
+    compat_uint_t duration;
+    compat_uint_t info;
+};
+```
+</details>
+</li>
+</ul>
+<b>Arch</b>
+<ul>
+<li>
+In <code>arm64</code>: Absent ⚠️
+</li>
+<li>
+In <code>armhf</code>: Absent ⚠️
+</li>
+<li>
+In <code>ppc64el</code>: Absent ⚠️
+</li>
+<li>
+In <code>riscv64</code>: Absent ⚠️
+</li>
+</ul>
+<b>Flavor</b>
+<ul>
+<li>
+In <code>aws</code>: Absent ⚠️
+</li>
+<li>
+In <code>azure</code>: Absent ⚠️
+</li>
+<li>
+In <code>gcp</code>: Absent ⚠️
+</li>
+<li>
+In <code>lowlatency</code>: Absent ⚠️
+</li>
+</ul>
+
+## Differences
+<b>Regular</b>
+<ul>
+<li>
+No changes between <code>5.8</code> and <code>5.11</code> ✅
+</li>
+<li>
+No changes between <code>5.11</code> and <code>5.13</code> ✅
+</li>
+<li>
+No changes between <code>5.13</code> and <code>5.15</code> ✅
+</li>
+<li>
+No changes between <code>5.15</code> and <code>5.19</code> ✅
+</li>
+<li>
+No changes between <code>5.19</code> and <code>6.2</code> ✅
+</li>
+<li>
+No changes between <code>6.2</code> and <code>6.5</code> ✅
+</li>
+<li>
+No changes between <code>6.5</code> and <code>6.8</code> ✅
+</li>
+</ul>

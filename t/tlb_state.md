@@ -1,0 +1,573 @@
+# Struct: <code>tlb_state</code>
+
+## Status
+<b>Regular</b>
+<ul>
+<li>
+<details>
+<summary>In <code>4.4</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *active_mm;
+    int state;
+    long unsigned int cr4;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.8</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *active_mm;
+    int state;
+    long unsigned int cr4;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.10</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *active_mm;
+    int state;
+    long unsigned int cr4;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.13</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    int state;
+    long unsigned int cr4;
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.15</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    u64 last_ctx_id;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>4.18</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    u64 last_ctx_id;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.0</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.3</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.4</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.8</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.11</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.13</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.15</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_spec;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>5.19</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_spec;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.2</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_spec;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.5</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_spec;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool invalidate_other;
+    u8 lam;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>6.8</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_spec;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool invalidate_other;
+    u8 lam;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+</ul>
+<b>Arch</b>
+<ul>
+<li>
+In <code>arm64</code>: Absent ⚠️
+</li>
+<li>
+In <code>armhf</code>: Absent ⚠️
+</li>
+<li>
+In <code>ppc64el</code>: Absent ⚠️
+</li>
+<li>
+In <code>riscv64</code>: Absent ⚠️
+</li>
+</ul>
+<b>Flavor</b>
+<ul>
+<li>
+<details>
+<summary>In <code>aws</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>azure</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>gcp</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+<li>
+<details>
+<summary>In <code>lowlatency</code>: ✅</summary>
+
+```c
+struct tlb_state {
+    struct mm_struct *loaded_mm;
+    struct mm_struct *last_user_mm;
+    long unsigned int last_user_mm_ibpb;
+    u16 loaded_mm_asid;
+    u16 next_asid;
+    bool is_lazy;
+    bool invalidate_other;
+    short unsigned int user_pcid_flush_mask;
+    long unsigned int cr4;
+    struct tlb_context ctxs[6];
+};
+```
+</details>
+</li>
+</ul>
+
+## Differences
+<b>Regular</b>
+<ul>
+<li>
+No changes between <code>4.4</code> and <code>4.8</code> ✅
+</li>
+<li>
+No changes between <code>4.8</code> and <code>4.10</code> ✅
+</li>
+<li>
+<details>
+<summary>Changed between <code>4.10</code> and <code>4.13</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field added. </b>
+<code>struct mm_struct *loaded_mm</code>
+</li>
+<li>
+<b>Field removed. </b>
+<code>struct mm_struct *active_mm</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Changed between <code>4.13</code> and <code>4.15</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field added. </b>
+<code>u16 loaded_mm_asid</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>u16 next_asid</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>u64 last_ctx_id</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>bool is_lazy</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>bool invalidate_other</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>short unsigned int user_pcid_flush_mask</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>struct tlb_context ctxs[6]</code>
+</li>
+<li>
+<b>Field removed. </b>
+<code>int state</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+No changes between <code>4.15</code> and <code>4.18</code> ✅
+</li>
+<li>
+<details>
+<summary>Changed between <code>4.18</code> and <code>5.0</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field added. </b>
+<code>struct mm_struct *last_user_mm</code>
+</li>
+<li>
+<b>Field added. </b>
+<code>long unsigned int last_user_mm_ibpb</code>
+</li>
+<li>
+<b>Field removed. </b>
+<code>u64 last_ctx_id</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+No changes between <code>5.0</code> and <code>5.3</code> ✅
+</li>
+<li>
+No changes between <code>5.3</code> and <code>5.4</code> ✅
+</li>
+<li>
+No changes between <code>5.4</code> and <code>5.8</code> ✅
+</li>
+<li>
+No changes between <code>5.8</code> and <code>5.11</code> ✅
+</li>
+<li>
+<details>
+<summary>Changed between <code>5.11</code> and <code>5.13</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field removed. </b>
+<code>bool is_lazy</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Changed between <code>5.13</code> and <code>5.15</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field added. </b>
+<code>long unsigned int last_user_mm_spec</code>
+</li>
+<li>
+<b>Field removed. </b>
+<code>long unsigned int last_user_mm_ibpb</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+No changes between <code>5.15</code> and <code>5.19</code> ✅
+</li>
+<li>
+No changes between <code>5.19</code> and <code>6.2</code> ✅
+</li>
+<li>
+<details>
+<summary>Changed between <code>6.2</code> and <code>6.5</code> ⚠️</summary>
+<ul>
+<li>
+<b>Field added. </b>
+<code>u8 lam</code>
+</li>
+</ul>
+</details>
+</li>
+<li>
+No changes between <code>6.5</code> and <code>6.8</code> ✅
+</li>
+</ul>
+<b>Arch</b>
+<ul>
+</ul>
+<b>Flavor</b>
+<ul>
+<li>
+No changes between <code>generic</code> and <code>aws</code> ✅
+</li>
+<li>
+No changes between <code>generic</code> and <code>azure</code> ✅
+</li>
+<li>
+No changes between <code>generic</code> and <code>gcp</code> ✅
+</li>
+<li>
+No changes between <code>generic</code> and <code>lowlatency</code> ✅
+</li>
+</ul>
